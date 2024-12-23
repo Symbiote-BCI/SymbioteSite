@@ -32,10 +32,16 @@
 
 .bg {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 app-footer {
     margin-top: auto;
+}
+
+.get-in-touch-btn {
+    font-size: 24px;
+    padding: 12px 24px;  
 }
