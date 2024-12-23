@@ -1,0 +1,84 @@
+.about-us-container {
+    font-family: 'Lato', sans-serif;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.about-us-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.8rem;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-us-header h2 {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.team-member {
+    display: flex;
+    justify-content: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member.even .content {
+    flex-direction: row;
+}
+
+.team-member.odd .content {
+    flex-direction: row;
+}
+
+.team-member .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-member img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member .text {
+    width: 50%;
+    text-align: left;
+}
+
+.team-member .text h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.team-member .text h4 {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0 15px;
+}
+
+.team-member .text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
