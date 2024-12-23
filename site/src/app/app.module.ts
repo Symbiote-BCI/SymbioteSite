@@ -11,13 +11,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { RotatingCubeComponent } from './components/rotating-cube/rotating-cube.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    RotatingCubeComponent
   ],
   imports: [
     BrowserModule,

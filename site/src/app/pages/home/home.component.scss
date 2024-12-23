@@ -23,3 +23,19 @@
         transform: scale(1.5);
     }
 }
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+app-footer {
+    margin-top: auto;
+}
