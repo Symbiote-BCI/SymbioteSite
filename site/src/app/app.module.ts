@@ -12,6 +12,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RotatingCubeComponent } from './components/rotating-cube/rotating-cube.component';
+import { VisionComponent } from './pages/vision/vision.component';
+import { TechnologyComponent } from './pages/technology/technology.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { RotatingCubeComponent } from './components/rotating-cube/rotating-cube.
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    RotatingCubeComponent
+    RotatingCubeComponent,
+    VisionComponent,
+    TechnologyComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
