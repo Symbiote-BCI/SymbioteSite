@@ -9,6 +9,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RotatingCubeComponent } from './components/rotating-cube/rotating-cube.component';
@@ -33,6 +35,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
   ],
   providers: [
     provideClientHydration(),
