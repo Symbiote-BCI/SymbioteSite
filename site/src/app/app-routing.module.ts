@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'vision', component: VisionComponent },
   { path: 'technology', component: TechnologyComponent },
   { path: 'about-us', component: AboutUsComponent },
-  { path: '**', redirectTo: '/home' },
+  { path: '**', redirectTo: '/' },
 ];
 
 @NgModule({
