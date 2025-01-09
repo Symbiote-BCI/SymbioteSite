@@ -1,9 +1,45 @@
 .main-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
 }
 
-app-footer {
-    margin-top: auto;
+.background {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(139, 139, 139);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(139, 139, 139, 1) 0%,
+    rgba(61, 61, 61, 1) 30%,
+    rgba(0, 0, 0, 1) 70%
+  );
+  transition: all 0.5s linear;
+}
+
+.background-vision {
+  width: 200vw;
+  height: 200vh;
+  left: -50vw;
+  top: -100vh;
+}
+
+.background-technology {
+  width: 200vw;
+  height: 200vh;
+  top: -100vh;
+}
+
+.background-about-us {
+  width: 200vw;
+  height: 200vh;
+  left: -100vw;
+  top: -50vh;
 }

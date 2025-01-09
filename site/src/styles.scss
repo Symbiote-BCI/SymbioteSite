@@ -1,5 +1,5 @@
-@use '@angular/material' as mat;
-@use '../m3-theme.scss';
+@use "@angular/material" as mat;
+@use "../m3-theme.scss";
 
 @include mat.core();
 
@@ -7,5 +7,7 @@ html {
   @include mat.all-component-themes(m3-theme.$light-theme);
 }
 
-html, body { height: 100%; background-color: #0d0d0d; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
