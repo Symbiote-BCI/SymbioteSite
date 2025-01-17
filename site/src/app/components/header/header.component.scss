@@ -1,28 +1,37 @@
 .spacer {
-    flex: 1;
+  flex: 1;
 }
 
 nav a {
-    font-size: 16px;
-    text-transform: none;
-    margin-left: 16px;
+  font-size: 16px;
+  text-transform: none;
+  margin-left: 16px;
+  color: white;
 }
 
 .logo-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .logo {
-    height: 40px;
-    cursor: pointer;
+  height: 40px;
+  cursor: pointer;
 }
 
 .spacer {
-    flex: 1;
+  flex: 1;
 }
 
 mat-toolbar {
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  position: fixed;
+  z-index: 1000;
+  height: 65px;
+  background-color: #33333366;
+}
+
+.filler {
+  height: 65px;
 }

@@ -1,12 +1,4 @@
-.main {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  height: 1px;
-  width: 1px;
-  background-color: #fff;
-  border-radius: 50%;
-}
+@import "../../../variables.scss";
 
 @keyframes zoom {
   0% {
@@ -18,14 +10,18 @@
   }
 }
 
-.bg {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.get-in-touch-btn {
+  font-size: 17px;
+  background-color: $primary-color;
+  color: white;
+  height: 40px;
+  width: 160px;
+  font-weight: 400;
+  margin-top: 1rem;
 }
 
-.get-in-touch-btn {
-  font-size: 24px;
-  padding: 12px 24px;
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 0;
 }
