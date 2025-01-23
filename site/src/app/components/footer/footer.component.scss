@@ -17,5 +17,20 @@
 
 p {
   font-size: 14px;
-  color: #666;
+  color: white;
+}
+
+br {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer,
+  .filler {
+    height: 80px;
+  }
+
+  br {
+    display: block;
+  }
 }

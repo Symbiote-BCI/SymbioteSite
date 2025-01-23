@@ -11,13 +11,20 @@ p {
   width: 90%;
 }
 
+.container {
+  height: auto;
+}
+
 .photo-container {
   margin-top: 8rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
   max-width: 850px;
   width: 90%;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 
 .card {
@@ -28,4 +35,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+  .photo-container {
+    margin-top: 2rem;
+  }
 }

@@ -12,8 +12,6 @@
   top: 0;
   left: 0;
   z-index: -1;
-  width: 100vw;
-  height: 100vh;
   background: rgb(139, 139, 139);
   background: radial-gradient(
     ellipse at center,
@@ -22,6 +20,11 @@
     rgba(0, 0, 0, 1) 70%
   );
   transition: all 0.5s linear;
+}
+
+.background-home {
+  width: 100vw;
+  height: 100vh;
 }
 
 .background-vision {
@@ -42,4 +45,11 @@
   height: 200vh;
   left: -100vw;
   top: -50vh;
+}
+
+@media screen and (max-width: 768px) {
+  .background-home {
+    width: 180vw;
+    left: -40vw;
+  }
 }

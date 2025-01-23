@@ -24,6 +24,14 @@ h2 {
   font-weight: 500;
 }
 
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
 p {
   font-size: 20px;
 }
@@ -34,4 +42,18 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }

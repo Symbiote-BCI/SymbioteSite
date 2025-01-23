@@ -24,4 +24,12 @@ h2 {
   font-weight: 400;
   font-size: 20px;
   margin-top: 0;
+  max-width: 80%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 18px;
+  }
 }
