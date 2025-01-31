@@ -38,6 +38,7 @@ p {
 
 .container {
   height: calc(100svh - 115px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

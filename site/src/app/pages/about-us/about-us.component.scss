@@ -1,84 +1,73 @@
-.about-us-container {
-    font-family: 'Lato', sans-serif;
-    max-width: 1200px;
-    margin: 40px auto;
+h1 {
+  margin: 4.5rem 0;
 }
 
-.about-us-header {
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 1.8rem;
-    color: #333;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
+h2,
+h3 {
+  margin: 0;
 }
 
-.about-us-header h1 {
-    font-size: 2.5rem;
-    color: #333;
+h2 {
+  font-size: 22px;
 }
 
-.about-us-header h2 {
-    font-size: 1.2rem;
-    color: #666;
+h3 {
+  font-weight: 500;
+  color: #9747ec;
+  font-size: 20px;
 }
 
-.team-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-.team-member {
-    display: flex;
-    justify-content: center;
-    background: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-.team-member.even .content {
-    flex-direction: row;
+.card {
+  height: 400px;
+  width: 220px;
+  border-radius: 30px;
+  background-color: #7b7b7b66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5em;
+  box-sizing: border-box;
 }
 
-.team-member.odd .content {
-    flex-direction: row;
+.container {
+  height: auto;
 }
 
-.team-member .content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+img {
+  height: 120px;
+  margin-bottom: 5px;
 }
 
-.team-member img {
-    width: 40%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+p {
+  font-size: 16px;
+  font-weight: 300;
+  text-indent: 1rem;
 }
 
-.team-member .text {
-    width: 50%;
-    text-align: left;
-}
-
-.team-member .text h3 {
-    font-size: 1.8rem;
-    margin: 10px 0;
-    color: #333;
-}
-
-.team-member .text h4 {
-    font-size: 1.2rem;
-    color: #555;
-    margin: 5px 0 15px;
-}
-
-.team-member .text p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
+@media screen and (max-width: 600px) {
+  .card {
+    height: auto;
+    width: 370px;
+    max-width: 90%;
+  }
 }
