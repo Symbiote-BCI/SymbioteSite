@@ -13,6 +13,13 @@ nav a {
   text-decoration: none;
 }
 
+.menu {
+  width: 20px;
+  display: none;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(309deg)
+    brightness(104%) contrast(102%);
+}
+
 .logo {
   height: 40px;
   cursor: pointer;
@@ -26,13 +33,49 @@ nav a {
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 0 16px;
+  justify-content: space-between;
+  padding: 0 2rem;
   position: fixed;
   z-index: 1000;
   height: 65px;
   background-color: #33333366;
+  box-sizing: border-box;
 }
 
 .filler {
   height: 65px;
+}
+
+.extended-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 65px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #333333;
+  box-sizing: border-box;
+  width: 100%;
+  color: white;
+}
+
+.extended-nav a {
+  font-size: 16px;
+  text-transform: none;
+  margin-left: 16px;
+  color: white;
+  text-decoration: none;
+  height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
 }

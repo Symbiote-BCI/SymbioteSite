@@ -1,14 +1,25 @@
 <div class="nav">
   <a routerLink="/" class="logo-link">
-    <img src="assets/logo.png" alt="Logo" class="logo" />
+    <img src="../../../assets/images/Logo.png" alt="Logo" class="logo" />
   </a>
-
-  <span class="spacer"></span>
 
   <nav>
     <a mat-button routerLink="/vision">Vision</a>
     <a mat-button routerLink="/technology">Technology</a>
     <a mat-button routerLink="/about-us">About Us</a>
   </nav>
+  <img
+    src="../../../assets/images/bars-solid.svg"
+    alt="toggle menu"
+    class="menu"
+    (click)="toggleNav()"
+  />
 </div>
+@if(navExtended){
+<div class="extended-nav" (click)="toggleNav()">
+  <a routerLink="/vision">Vision</a>
+  <a routerLink="/technology">Technology</a>
+  <a routerLink="/about-us">About Us</a>
+</div>
+}
 <div class="filler"></div>
