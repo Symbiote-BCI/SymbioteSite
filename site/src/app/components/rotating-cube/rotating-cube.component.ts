@@ -43,7 +43,7 @@ export class RotatingCubeComponent implements OnInit, OnDestroy {
       this.camera.position.z = 50; // Move the camera much further away
 
       this.renderer = new THREE.WebGLRenderer({ antialias: true });
-      this.renderer.setSize(window.innerWidth / 1.5, window.innerHeight / 2);
+      this.renderer.setSize(window.innerWidth / 1.5, window.innerHeight / 2.5);
       this.renderer.setClearColor(0x000000, 0);
       this.renderer.shadowMap.enabled = true; // Enable shadow maps
       this.elementRef.nativeElement.appendChild(this.renderer.domElement);
