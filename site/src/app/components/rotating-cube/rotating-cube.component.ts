@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, OnDestroy } from '@angular/core';
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'; // Importă loaderul pentru GLB
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 @Component({
   selector: 'app-rotating-cube',
@@ -14,7 +14,7 @@ export class RotatingCubeComponent implements OnInit, OnDestroy {
   private model!: THREE.Object3D; // Înlocuiește tipul cubului cu un tip general de obiect
   private animationFrameId: number = 0;
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef: ElementRef) { }
 
   ngOnInit(): void {
     this.init3D();
