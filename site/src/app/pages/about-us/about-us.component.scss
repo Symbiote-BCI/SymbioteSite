@@ -71,3 +71,33 @@ p {
     max-width: 90%;
   }
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons i {
+  font-size: 30px;
+  color: black;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.linkedin-icon {
+  font-size: 40px;
+}
+
+.instagram-icon {
+  font-size: 40px;
+}
+
+.facebook-icon {
+  font-size: 40px;
+}
